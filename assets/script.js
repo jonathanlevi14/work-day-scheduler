@@ -34,19 +34,16 @@ function hourUpdater() {
 //
 function saveInfo() {
   var dailyActivity = text8.val()
-  localStorage.setItem("activity", dailyActivity);
-}
-
+  localStorage.setItem("activity", dailyActivity);}
 function retrieveInfo() {
   var savedInfo = localStorage.getItem("activity")
   text8.text(savedInfo);
    var dailyActivity = text8.val()
-  localStorage.setItem("activity", dailyActivity);
-}
-
-
-
+  localStorage.setItem("activity", dailyActivity);}
 $(".saveBtn").click(saveInfo);
+
+
+
 retrieveInfo()
 hourUpdater()
 //===============================================
